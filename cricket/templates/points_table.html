@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Points Table</title>
+</head>
+<body>
+    <h1>Points Table</h1>
+    <ul>
+        {% for point in points %}
+            <li>{{ point.team.name }} - {{ point.points }} points</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

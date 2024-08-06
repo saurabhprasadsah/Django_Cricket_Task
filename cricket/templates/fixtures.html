@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixtures</title>
+</head>
+<body>
+    <h1>Fixtures</h1>
+    <ul>
+        {% for match in matches %}
+            <li>{{ match.team1.name }} vs {{ match.team2.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

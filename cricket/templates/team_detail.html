@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ team.name }}</title>
+</head>
+<body>
+    <h1>{{ team.name }}</h1>
+    <ul>
+        {% for player in players %}
+            <li>
+                {{ player.last_name }} {{ player.first_name }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
